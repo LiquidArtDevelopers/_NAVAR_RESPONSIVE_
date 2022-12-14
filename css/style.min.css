@@ -1,0 +1,75 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(160, 128, 236);
+  color: white;
+  padding: 20px;
+  font-family: arial;
+  cursor: pointer;
+  /*  RESPONSIVE A 600PX */
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit; /* COLOR DE SU PADRE */
+}
+.navbar .logo {
+  margin-right: 100px;
+}
+.navbar .menu .list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar #toggler, .navbar label {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    /* AL HACER CLIC EN EL TOGGLER CAMBIAMOS EL ESTILO HEIGHT DEL MENÚ A 100% */
+  }
+  .navbar .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .navbar .menu .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+  }
+  .navbar #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
+
+.contenido {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px dashed rgb(73, 73, 73);
+  padding: 20px;
+  font-size: 20px;
+}
+.contenido h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=style.min.css.map */
