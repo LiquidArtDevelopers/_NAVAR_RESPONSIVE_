@@ -17,7 +17,7 @@
   padding: 20px;
   font-family: arial;
   cursor: pointer;
-  /*  RESPONSIVE A 600PX */
+  /*  RESPONSIVE A 540PX */
 }
 .navbar a {
   text-decoration: none;
@@ -36,7 +36,7 @@
   align-items: center;
   cursor: pointer;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .navbar {
     /* AL HACER CLIC EN EL TOGGLER CAMBIAMOS EL ESTILO HEIGHT DEL MENÚ A 100% */
   }

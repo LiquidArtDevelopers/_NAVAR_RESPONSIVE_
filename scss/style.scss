@@ -6,7 +6,7 @@
 }
 
 /* VARIABLES */
-$movil: 600px;
+$movil: 480px;
 $colorFondo: rgb(160, 128, 236);
 .navbar{
     display: flex;
@@ -15,7 +15,7 @@ $colorFondo: rgb(160, 128, 236);
     justify-content: space-between;
     background-color: $colorFondo;
     color: white;
-    padding: 20px;
+    padding: 20px; 
     font-family: arial;
     cursor: pointer;
     a{
@@ -38,7 +38,7 @@ $colorFondo: rgb(160, 128, 236);
         cursor: pointer;
     }
 
-    /*  RESPONSIVE A 600PX */
+    /*  RESPONSIVE A 540PX */
     @media screen and (max-width: $movil){
         .menu{
             width: 100%;
