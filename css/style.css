@@ -12,8 +12,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(160, 128, 236);
-  color: white;
+  background-color: rgb(85, 48, 172);
+  color: rgb(105, 36, 36);
   padding: 20px;
   font-family: arial;
   cursor: pointer;
@@ -72,4 +72,54 @@
 .contenido h1 {
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+.ejemplo {
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
+}
+.ejemplo .hijo {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(235, 160, 22);
+  color: white;
+  font-size: 100px;
+  font-family: arial;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ejemplo .hijo:first-child { /* el primer hijo */
+  background-color: aqua;
+}
+.ejemplo .hijo:nth-child(5) { /*  el hijo número 5 */
+  background-color: green;
+}
+.ejemplo .hijo:last-child { /* el último hijo */
+  background-color: black;
+}
+.ejemplo .hijo:nth-child(odd) { /* hijos impares */
+  color: rgb(145, 26, 46);
+}
+.ejemplo .hijo:nth-child(even) { /*  hijos pares */
+  color: blue;
+}
+.ejemplo .hijo:nth-child(4n) { /* referencia a los hijos 4, 8, 12, etc */
+  border: 10px solid black;
+}
+.ejemplo .hijo:nth-child(5n+3) { /* empezando por el 3 y cada 5 hijos: 3, 8, 13, 18, etc */
+  border: 10px dashed grey;
+}
+.ejemplo .hijo:nth-last-child(3) { /* el tercer hijo empezando por atrás */
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

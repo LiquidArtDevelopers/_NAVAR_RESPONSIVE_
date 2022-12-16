@@ -7,14 +7,14 @@
 
 /* VARIABLES */
 $movil: 480px;
-$colorFondo: rgb(160, 128, 236);
+$colorFondo: rgb(85, 48, 172);
 .navbar{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: $colorFondo;
-    color: white;
+    color: rgb(105, 36, 36);
     padding: 20px; 
     font-family: arial;
     cursor: pointer;
@@ -73,6 +73,58 @@ $colorFondo: rgb(160, 128, 236);
         font-size: 30px;
         margin-bottom: 30px;
     }
+}
+.ejemplo{
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px;
+    .hijo{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(235, 160, 22);
+        color: white;
+        font-size: 100px;
+        font-family: arial;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child{ /* el primer hijo */
+            background-color: aqua
+        }
+        &:nth-child(5){ /*  el hijo número 5 */
+            background-color: green;
+        }
+        &:last-child{ /* el último hijo */
+            background-color: black;
+        }
+        &:nth-child(odd){ /* hijos impares */
+            color: rgb(145, 26, 46); 
+        }
+        &:nth-child(even){ /*  hijos pares */
+            color: blue; 
+        }
+        &:nth-child(4n){ /* referencia a los hijos 4, 8, 12, etc */
+            border: 10px solid black; 
+        }
+        &:nth-child(5n+3){/* empezando por el 3 y cada 5 hijos: 3, 8, 13, 18, etc */
+            border: 10px dashed grey;
+        }
+        &:nth-last-child(3){ /* el tercer hijo empezando por atrás */
+            border-radius: 20px;
+        }
+        
+        
+    }
+    
 }
 
 
